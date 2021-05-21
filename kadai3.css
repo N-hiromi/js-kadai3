@@ -1,0 +1,27 @@
+
+.lists{
+  display:flex;
+  justify-content: space-arounds;
+  flex-wrap:wrap;
+  list-style: none;
+  margin:0 5%;
+  overflow: auto;
+
+}
+li{
+  width:30%;
+  min-width: 0;
+  object-fit: contain;
+}
+img{
+  display: table;
+  /*width:80%;*/
+}
+
+.key{
+  background-color:#FFF;
+  border-color:black;
+  border-style:solid;
+  margin-bottom:0;
+  
+}
