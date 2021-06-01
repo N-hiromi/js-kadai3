@@ -1,25 +1,35 @@
-  <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
-        <link rel="stylesheet" href="kadai3.css">
-        <link rel="stylesheet" href="html5_reset.css">
-        <title>リアルタイムフィルター</title>
-      </head>
- 
-      <body>
-        <h3>リアルタイムフィルター</h3>
-        <p>入力した文字を含まない要素は非表示となります</p>
-        <input type="text" name="text" id="inputText" placeholder="検索ワードを入力してください">
-        <ul class="lists">
-          <li><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13b.jpg" alt="ドバト ハト"><!--div class="key"><p>キーワード</p><p>ドバト　ハト　鳩</p></div--></li>
-          <li><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13g.jpg" alt="キジバト ハト"></li>
-          <li><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13d.jpg" alt="キンバト ハト"></li>
-          <li><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13c.jpg" alt="アオバト ハト"></li>
-          <li><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13e.jpg" alt="ベニバト ハト"></li>
-          <li><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13f.jpg" alt="シラコバト ハト"></li>
+  <!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>リアルタイムフィルター</title>
+   <link rel="stylesheet" href="./html5_reset.css">
+　　   <link rel="stylesheet" href="kadai3.css">
+</head>
+<body>
+  <div class="wrapper">
+    
+   　<h3>リアルタイムフィルター</h3>
+  　 <p>入力した文字を含まない要素は非表示となります</p>
+  　 <div class="search-area">
+      <form>
+        <input type="text" id="search-text" placeholder="検索ワードを入力">
+      </form>
+      <div class="search-result">
+        <div class="search-result__hit-num"></div>
+        <div id="search-result__list"></div>
+      </div>
+    </div>
+    <ul class="target-area">
+          <li id="ドバト ハト 鳩"><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13b.jpg" alt="ドバト" class="ドバト"><div class="key"><p>キーワード<span>ドバト　ハト　鳩</span></p></div></li>
+          <li id="キジバト ハト 鳩"><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13g.jpg" alt="キジバト" class="キジバト ハト 鳩"><div class="key"><p>キーワード<span>キジバト　ハト　鳩</span></p></div></li>
+          <li id="キンバト ハト 鳩"><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13d.jpg" alt="キンバト" class="キンバト ハト 鳩"><div class="key"><p>キーワード<span>キンバト　ハト　鳩</span></p></div></li>
+          <li id="アオバト ハト 鳩"><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13c.jpg" alt="アオバト" class="アオバト ハト 鳩"><div class="key"><p>キーワード<span>アオバト　ハト　鳩</span></p></div></li>
+          <li id="ベニバト ハト 鳩"><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13e.jpg" alt="ベニバト" class="ベニバト ハト 鳩"><div class="key"><p>キーワード<span>ベニバト　ハト　鳩</span></p></div></li>
+          <li id="シラコバト ハト 鳩"><img src="https://www.advan-group.co.jp/wp-content/uploads/2020/05/times_topic_13f.jpg" alt="シラコバト" class="シラコバト ハト 鳩"><div class="key"><p>キーワード<span>シラコバト　ハト　鳩</span></p></div></li>
         </ul>
-        <script src="kadai3.js"></script>
-      </body>
-    </html>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="kadai3.js"></script>
+</body>
+</html>

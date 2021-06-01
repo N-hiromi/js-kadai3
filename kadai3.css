@@ -1,27 +1,47 @@
+html body{
+  background-color:#bfff00;
+}
 
-.lists{
+.search-result {
+  margin-top: 20px;
+}
+.target-area {
+  margin-top: 50px;
   display:flex;
-  justify-content: space-arounds;
+  justify-content: space-around;
   flex-wrap:wrap;
   list-style: none;
   margin:0 5%;
   overflow: auto;
-
 }
-li{
-  width:30%;
-  min-width: 0;
-  object-fit: contain;
+.target-area .hidden {
+  display: none
+}
+
+body h3, body p,body input{
+  margin:16px 7%;
+}
+input{
+  width:85%;
+}
+body li{
+  width:40%;
+}
+li p{
+  margin-top:10px;
+  line-height:1.2;
+  text-align: center;
 }
 img{
   display: table;
-  /*width:80%;*/
+  width:100%;
 }
 
 .key{
   background-color:#FFF;
-  border-color:black;
-  border-style:solid;
-  margin-bottom:0;
-  
+  border:solid 1px black;
+  margin-bottom:10px;
+}
+.key p span{
+  display:block;
 }
